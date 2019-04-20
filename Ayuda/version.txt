@@ -1,0 +1,12 @@
+V1.2.0
+2019-03-07 11:25
+
+Se reestructuro el archivo MenuPrincipal_DLG_MAVI.esp para que los menus
+esten como en la versión 3100
+
+-------------------------------------------------------------------------------
+
+V1.1.0
+2019-03-07 10:56
+
+Se actualezo la carpeta de ReportesMAVI a la fecha del 28 de febrero del 2019

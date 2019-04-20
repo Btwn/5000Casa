@@ -1,0 +1,15 @@
+[FormaPago.tbl/Tabla]
+ListaCampos=FormaPago<BR>MovIngresos<BR>MovEgresos<BR>Comision<BR>Comision2<BR>Impuestos<BR>Moneda<BR>RequiereReferencia<BR>Orden<BR>Restringida<BR>PermiteCambio<BR>PV<BR>TarjetaBandaMagnetica<BR>Cuenta<BR>Grupo<BR>DefCtaDinero<BR>Importacion<BR>VentaLinea
+SQL=SELECT<BR>  FormaPago,<BR>  MovIngresos,<BR>  MovEgresos,<BR>  Comision,<BR>  Impuestos,<BR>  Moneda,<BR>  RequiereReferencia,<BR>  Orden,<BR>  Restringida,<BR>  PermiteCambio,<BR>  PV,<BR>  TarjetaBandaMagnetica,<BR>  Cuenta,<BR>  Grupo,<BR>  DefCtaDinero,<BR>  Comision2,<BR>  Importacion,<BR>  VentaLinea<BR><BR>FROM<BR>  FormaPago
+
+[FormaPago.tbl/VentaLinea]
+Clave=VentaLinea
+Nombre=Venta Linea
+Visible=S
+TamanoValidacion=4
+TipoDatos=Texto
+Tamano=4
+AyudaEnCaptura=Lista de Opciones
+OpcionesColumnas=1
+OpcionesPredefinidas=Si - No
+OpcionesRenglones=8

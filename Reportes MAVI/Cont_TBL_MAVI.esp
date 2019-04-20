@@ -1,0 +1,5 @@
+;*** 22-03-19 Reacomodo de los archivos especiales
+
+[Cont.tbl/UEN]
+ValorPorOmision=Sucursal.wUEN
+CondicionEdicion=Falso

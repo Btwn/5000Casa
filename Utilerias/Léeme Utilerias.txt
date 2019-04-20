@@ -1,0 +1,91 @@
+Para la descarga de los archivos de esta carpeta favor de dirigirse a la ruta:
+
+http://docs.intelisis.info/Utilerias
+
+
+El listado de los archivos son:
+
+CLR
+CR
+LDI
+Sincro IS DropBox
+WMS Mobile
+Interfaz Tarjetas Bancarias
+
+SetupCFDFlex v2.3
+CFDFlex_v10.1
+Setup DIM 1.0
+DIM Objetos 
+InstalacionManualReportBuilder_v2
+Instalación Parche CFD Anterior
+Service Pack CFD v2012_19
+Instalación CRM 
+Abrir Puerto 4022
+bCentral
+Bio Scrypt
+Buscador
+Calcular Precio
+Códigos Postales Todo México(Version 2.0)
+Configuración Nómina Automática
+Crear Certificados SSB 
+Driver Sentinel
+Encriptar Password
+Escuchar Puerto
+ESP Opcionales
+Excel 
+FordX
+Foreign Keys
+Generar AddOn
+Generar ESP
+Generar ESP 2.0
+Herramientas Sincro SSB
+Iconos 32 bits
+Inglés 
+Instalación BDE
+Instalación CFD
+Instalación CR
+Instalacion CR con CFD
+Instalación Cubo DX 
+Instalación Cubos XML
+Instalación Digitalización 
+Instalación Huella
+Instalación Idioma Inglés
+Instalación Intelisis Express
+Instalación Intelisis CGI 
+Instalación Intelisis CLR
+Instalación Intelisis Job
+Instalación Intelisis Outlook
+Instalación Intelisis RSS
+Instalación Intelisis WS
+Instalación Licencias 
+Instalación Menú Vista
+Instalación Módulo Central
+Instalación Monitor Archivo 
+Instalación SQL Database Mail
+Instalación XP Intelisis
+Integridad Referencial 
+Intelisis CFD
+Intelisis Fuera de Línea 
+Intelisis Service 
+Layout Bancarios
+Monitor
+Notificación 
+Archivo ntwdblib.dll
+Parche Notificaciones v001 3500-4000
+Procesador Cubos 2005 
+Reportes 
+Restaurar Datos
+Sentinel
+Service Pack Módulo Fiscal
+sqlxml
+SS2
+Suntuario 
+Win Visa 
+WS Enviar
+xp Opcionales 
+
+Complementos de productos que se intregran a la versión se debeb descargar de http://docs.intelisis.info/OtrasSolucionesSDK y http://docs.intelisis.info/OtrasSolucionesE:
+
+MMA
+MFA 
+POS

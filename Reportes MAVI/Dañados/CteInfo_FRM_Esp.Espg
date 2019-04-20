@@ -1,0 +1,25 @@
+[CteInfo.frm/Forma]
+ListaAcciones=Cerrar<BR>Tareas<BR>Propiedades<BR>Evaluaciones<BR>Anexos<BR>Doc<BR>Politica<BR>Bitacora<BR>Cubos<BR>Correos<BR>Mapa<BR>Movimientos<BR>VentaPendiente<BR>CteCompraPendiente<BR>ExplorarVenta<BR>ExplorarVentaD<BR>VentaAcum<BR>CteInfoServicio<BR>CxcAcum<BR>EfectivoAcum<BR>ValesAcum<BR>Redondeo<BR>AnticiposFacturados<BR>Sentinel<BR>Salir<BR>RFCEDI
+
+[CteInfo.frm/RFCNvo.Cte.RFC]
+Carpeta=RFCNvo
+Clave=Cte.RFC
+Editar=S
+LineaNueva=S
+ValidaNombre=S
+3D=S
+Tamano=15
+ColorFondo=Blanco
+ColorFuente=Negro
+[CteInfo.frm/Acciones.RFCEDI]
+Nombre=RFCEDI
+Boton=8
+NombreEnBoton=S
+NombreDesplegar=&Editar RFC
+GuardarConfirmar=S
+EnBarraHerramientas=S
+EnMenu=S
+TipoAccion=Formas
+ClaveAccion=EdicionRFC
+Activo=S
+;VisibleCondicion=Usuario.Configuracion=<T>VENTM_GERA<T>

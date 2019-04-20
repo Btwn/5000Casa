@@ -1,0 +1,20 @@
+
+[Vista]
+Icono=0
+Clave=DM0500DNivelCobranzaVis
+Nombre=DM0500D NivelCobranza
+Modulos=(Todos)
+TipoTabla=General
+
+ListaCampos=NivelCobranza
+VistaIndependiente=S
+CamposBusquedaRapida=NivelCobranza
+SQL=SELECT Distinct NivelCobranza<BR>FROM DM0207mavirecuperacionctefinal<BR>WHERE ApoyoDima = 1
+[NivelCobranza]
+Clave=NivelCobranza
+Nombre=NivelCobranza
+Visible=S
+TamanoValidacion=100
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=NivelCobranza

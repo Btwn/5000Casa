@@ -1,0 +1,36 @@
+[MenuHerramientaCompras.dlg/Dialogo]
+ListaAcciones=ParametrosPlaneadorMAVI<BR>PlaneadorMacroMAVI<BR>ProcesarCompra<BR>ProcesarRequisicionesCompra<BR>DM0103ComsExpMacroMavifrm
+
+
+[MenuHerramientaCompras.dlg/Acciones.ParametrosPlaneadorMAVI]
+Nombre=ParametrosPlaneadorMAVI
+Boton=0
+NombreDesplegar=Parametros Planeador
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=ParametrosPlaneadorMAVI
+Activo=S
+Visible=S
+
+[MenuHerramientaCompras.dlg/Acciones.PlaneadorMacroMAVI]
+Nombre=PlaneadorMacroMAVI
+Boton=0
+NombreDesplegar=Planeador MAVI
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=PlaneadorMacroMAVI
+Activo=S
+Visible=S
+
+[MenuHerramientaCompras.dlg/Acciones.DM0103ComsExpMacroMavifrm]
+Nombre=DM0103ComsExpMacroMavifrm
+Boton=0
+NombreDesplegar=Explorador Planeador MAVI
+EnMenu=S
+EnBarraAcciones=S
+TipoAccion=Formas
+ClaveAccion=DM0103ComsExpMacroMavifrm
+Activo=S
+Visible=S

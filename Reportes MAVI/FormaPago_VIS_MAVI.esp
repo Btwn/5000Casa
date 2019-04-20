@@ -1,0 +1,16 @@
+[FormaPago.vis/Vista]
+ListaCampos=FormaPago.FormaPago<BR>FormaPago.MovIngresos<BR>FormaPago.MovEgresos<BR>FormaPago.Comision<BR>FormaPago.Comision2<BR>FormaPago.Impuestos<BR>FormaPago.Moneda<BR>FormaPago.RequiereReferencia<BR>FormaPago.Orden<BR>FormaPago.Restringida<BR>FormaPago.PermiteCambio<BR>FormaPago.PV<BR>FormaPago.TarjetaBandaMagnetica<BR>FormaPago.Cuenta<BR>FormaPago.Grupo<BR>FormaPago.DefCtaDinero<BR>FormaPago.Importacion<BR>FormaPago.VentaLinea<BR>Cta.Cuenta<BR>Cta.Descripcion<BR>CtaDinero.CtaDinero<BR>CtaDinero.Descripcion<BR>CtaDinero.Tipo
+SQL=SELECT<BR>FormaPago.FormaPago,<BR>FormaPago.MovIngresos,<BR>FormaPago.MovEgresos,<BR>FormaPago.Comision,<BR>FormaPago.Comision2,<BR>FormaPago.Impuestos,<BR>FormaPago.Moneda,<BR>FormaPago.RequiereReferencia,<BR>FormaPago.Orden,<BR>FormaPago.Restringida,<BR>FormaPago.PermiteCambio,<BR>FormaPago.PV,<BR>FormaPago.TarjetaBandaMagnetica,<BR>FormaPago.Cuenta,<BR>FormaPago.Grupo,<BR>FormaPago.DefCtaDinero,<BR>FormaPago.Importacion,<BR>FormaPago.VentaLinea,<BR>Cta.Cuenta,<BR>Cta.Descripcion,<BR>CtaDinero.CtaDinero,<BR>CtaDinero.Descripcion,<BR>CtaDinero.Tipo<BR>FROM FormaPago<BR>LEFT OUTER JOIN Cta ON FormaPago.Cuenta=Cta.Cuenta<BR>LEFT OUTER JOIN CtaDinero ON FormaPago.DefCtaDinero=CtaDinero.CtaDinero
+
+[FormaPago.vis/FormaPago.VentaLinea]
+Clave=FormaPago.VentaLinea
+Nombre=Venta Linea
+Visible=S
+TamanoValidacion=4
+TipoDatos=Texto
+Tamano=4
+LigaTabla=FormaPago
+LigaCampo=VentaLinea
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=VentaLinea

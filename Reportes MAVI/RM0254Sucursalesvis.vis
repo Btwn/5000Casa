@@ -1,0 +1,21 @@
+[Vista]
+Icono=0
+Clave=RM0254SucursalesVis
+Nombre=Sucursales
+Modulos=(Todos)
+VistaIndependiente=S
+TipoTabla=General
+ListaCampos=sucursal
+LlavePrimaria=sucursal
+CamposBusquedaRapida=sucursal
+SQL=select distinct Cast(sucursal As Varchar) as Sucursal, Sucursal as Sucursalord  <BR>from sucursal <BR>where sucursal NOT IN (0,94,96,97,98,99) order by Sucursalord
+[sucursal]
+Clave=sucursal
+Nombre=sucursal
+Visible=S
+OpcionesColumnas=1
+OpcionesRenglones=8
+TamanoValidacion=10
+TipoDatos=Texto
+ClaveBDE=Sucursal
+Tamano=30

@@ -1,0 +1,6 @@
+;*** 22-03-19 Reacomodo de los archivos especiales
+
+[ObservacionLista.frm/Lista]
+HojaPermiteInsertar=N
+HojaPermiteEliminar=N
+PermiteEditar=N
