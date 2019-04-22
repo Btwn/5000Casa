@@ -1,0 +1,173 @@
+[ActivoFLista.vis/SELECT]
+'ActivoF.Observaciones'=ActivoF.Observaciones
+
+[ActivoFLista.vis/Vista]
+SQL=SELECT<BR>  ActivoF.ID,<BR>  ActivoF.Empresa,<BR>  ActivoF.Articulo,<BR>  ActivoF.Serie,<BR>  ActivoF.Moneda,<BR>  ActivoF.Almacen,<BR>  ActivoF.Categoria,<BR>  ActivoF.AdquisicionFecha,<BR>  ActivoF.VidaUtil,<BR>  ActivoF.DepreciacionInicio,<BR>  ActivoF.DepreciacionMeses,<BR>  ActivoF.Estatus,<BR>  ActivoF.Sucursal,<BR>  ActivoF.TieneMovimientos,<BR>  ActivoF.Responsable,<BR>  ActivoFCat.Propietario,<BR>  Art.Articulo,<BR>  Art.Descripcion1,<BR>  Personal.ApellidoPaterno,<BR>  Personal.ApellidoMaterno,<BR>  Personal.Nombre,  ActivoF.Observaciones,<BR>  Vehiculo.Vehiculo,<BR>  Vehiculo.Descripcion,<BR>  Vehiculo.Placas,<BR>  Vehiculo.Descripcion1,<BR>  Vehiculo.Descripcion2,<BR>  Vehiculo.Descripcion3,<BR>  Vehiculo.Descripcion4,<BR>  Vehiculo.Descripcion5<BR><BR>FROM<BR>  ActivoF<BR>  JOIN Art ON ActivoF.Articulo=Art.Articulo<BR>  LEFT OUTER JOIN ActivoFCat ON ActivoF.Categoria=ActivoFCat.Categoria<BR>  LEFT OUTER JOIN Personal ON ActivoF.Responsable=Personal.Personal
+
+[ActivoFLista.vis/Vista.ListaCampos]
+Personal.Nombre=ActivoF.Observaciones
+ActivoF.Observaciones=Vehiculo.Vehiculo
+Vehiculo.Vehiculo=Vehiculo.Descripcion
+Vehiculo.Descripcion=Vehiculo.Placas
+Vehiculo.Placas=Vehiculo.Descripcion1
+Vehiculo.Descripcion1=Vehiculo.Descripcion2
+Vehiculo.Descripcion2=Vehiculo.Descripcion3
+Vehiculo.Descripcion3=Vehiculo.Descripcion4
+Vehiculo.Descripcion4=Vehiculo.Descripcion5
+Vehiculo.Descripcion5=(Fin)
+
+[ActivoFLista.vis/Vista.ListaTablas]
+Personal=Vehiculo
+Vehiculo=(Fin)
+
+[Vista.ListaRelaciones]
+ActivoF.Personal=ActivoF.Vehiculo
+ActivoF.Vehiculo=Personal.Vehiculo
+Personal.Vehiculo=Vehiculo.Art
+Vehiculo.Art=Vehiculo.ActivoF
+Vehiculo.ActivoF=(Fin)
+
+[ActivoFLista.vis/ActivoF.Observaciones]
+Clave=ActivoF.Observaciones
+LigaTabla=ActivoF
+LigaCampo=Observaciones
+Ligado=S
+TipoCampo=Tabla
+TipoDatos=Texto
+Tamano=100
+ClaveBDE=Observaciones
+
+[ActivoFLista.vis/Vehiculo.Vehiculo]
+Clave=Vehiculo.Vehiculo
+Nombre=Unidad
+Visible=S
+TamanoValidacion=10
+Tamano=10
+Mayusculas=S
+CondicionEdicion=no TieneMovimientos
+LigaTabla=Vehiculo
+LigaCampo=Vehiculo
+ClaveBDE=Vehiculo
+Alineacion=por Omisión
+AyudaMemRenglones=8
+AyudaMemOpc=Unicamente opciones listadas
+
+[ActivoFLista.vis/Vehiculo.Descripcion]
+Clave=Vehiculo.Descripcion
+Nombre=Nombre Unidad
+Visible=S
+TamanoValidacion=10
+Tamano=100
+LigaTabla=Vehiculo
+LigaCampo=Descripcion
+ClaveBDE=Descripcion
+Alineacion=por Omisión
+AyudaMemRenglones=8
+AyudaMemOpc=Unicamente opciones listadas
+
+[ActivoFLista.vis/Vehiculo.Placas]
+Clave=Vehiculo.Placas
+Nombre=Placas
+Visible=S
+TamanoValidacion=10
+Tamano=10
+Mayusculas=S
+TipoDatos=Texto
+LigaTabla=Vehiculo
+LigaCampo=Placas
+Ligado=S
+TipoCampo=Tabla
+ClaveBDE=Placas
+
+[ActivoFLista.vis/Vehiculo.Descripcion1]
+Clave=Vehiculo.Descripcion1
+Nombre=GrupoUnidad
+Visible=S
+TamanoValidacion=10
+Tamano=50
+LigaTabla=Vehiculo
+LigaCampo=Descripcion1
+ClaveBDE=Descripcion1_1
+Alineacion=por Omisión
+AyudaMemRenglones=8
+AyudaMemOpc=Unicamente opciones listadas
+
+[ActivoFLista.vis/Vehiculo.Descripcion2]
+Clave=Vehiculo.Descripcion2
+Nombre=PuntoReunion
+Visible=S
+TamanoValidacion=10
+Tamano=50
+LigaTabla=Vehiculo
+LigaCampo=Descripcion2
+ClaveBDE=Descripcion2
+Alineacion=por Omisión
+AyudaMemRenglones=8
+AyudaMemOpc=Unicamente opciones listadas
+
+[ActivoFLista.vis/Vehiculo.Descripcion3]
+Clave=Vehiculo.Descripcion3
+Nombre=ModeloUnidad
+Visible=S
+TamanoValidacion=10
+Tamano=50
+LigaTabla=Vehiculo
+LigaCampo=Descripcion3
+ClaveBDE=Descripcion3
+Alineacion=por Omisión
+AyudaMemRenglones=8
+AyudaMemOpc=Unicamente opciones listadas
+
+[ActivoFLista.vis/Vehiculo.Descripcion4]
+Clave=Vehiculo.Descripcion4
+Nombre=MarcaUnidad
+Visible=S
+TamanoValidacion=10
+Tamano=50
+LigaTabla=Vehiculo
+LigaCampo=Descripcion4
+ClaveBDE=Descripcion4
+Alineacion=por Omisión
+AyudaMemRenglones=8
+AyudaMemOpc=Unicamente opciones listadas
+
+[ActivoFLista.vis/Vehiculo.Descripcion5]
+Clave=Vehiculo.Descripcion5
+Nombre=UsoUnidad
+Visible=S
+TamanoValidacion=10
+Tamano=50
+LigaTabla=Vehiculo
+LigaCampo=Descripcion5
+ClaveBDE=Descripcion5
+Alineacion=por Omisión
+AyudaMemRenglones=8
+AyudaMemOpc=Unicamente opciones listadas
+
+[ActivoFLista.vis/Relaciones.ActivoF.Vehiculo]
+Clave=ActivoF.Vehiculo
+TablaRemota=Vehiculo
+LlaveLocal=ActivoF.Articulo<BR>ActivoF.Serie
+LlaveRemota=Articulo<BR>Serie
+TipoRelacion=Opcional
+
+[ActivoFLista.vis/Relaciones.Personal.Vehiculo]
+Clave=Personal.Vehiculo
+TablaRemota=Vehiculo
+LlaveLocal=Personal.Vehiculo
+LlaveRemota=Vehiculo
+TipoRelacion=Opcional
+
+[ActivoFLista.vis/Relaciones.Vehiculo.Art]
+Clave=Vehiculo.Art
+TablaRemota=Art
+LlaveLocal=Vehiculo.Articulo
+LlaveRemota=Articulo
+TipoRelacion=Opcional
+
+[ActivoFLista.vis/Relaciones.Vehiculo.ActivoF]
+Clave=Vehiculo.ActivoF
+TablaRemota=ActivoF
+LlaveLocal=Vehiculo.Articulo<BR>Vehiculo.Serie<BR>{Comillas(Empresa)}
+LlaveRemota=Articulo<BR>Serie<BR>Empresa
+TipoRelacion=Opcional
