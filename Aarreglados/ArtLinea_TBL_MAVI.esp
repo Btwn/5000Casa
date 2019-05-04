@@ -32,8 +32,7 @@ ID=(Fin)
 
 [ArtLinea.tbl/Tabla.SQL]
 Clave,=POSAgenteDetalle,
-POSAgenteDetalle,=Clave,
-Clave,=ValidarPropEnSerie,
+POSAgenteDetalle,=ValidarPropEnSerie,
 ValidarPropEnSerie,=ArtTipoPequeMAVI,
 ArtTipoPequeMAVI,=ArtTipoComputoMAVI,
 ArtTipoComputoMAVI,=ArtTipoDecoracionMavi,
