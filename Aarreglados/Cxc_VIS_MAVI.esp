@@ -38,8 +38,8 @@ Cxc.SaldoAplicadoMAVI,=Cxc.RefAnticipoMAVI,
 Cxc.RefAnticipoMAVI,=Cxc.SeEnviaBuroCreditoMavi,
 Cxc.SeEnviaBuroCreditoMavi,=CteEnviarA.Cadena,
 CteEnviarA.Cadena,=Cxc.FacDesgloseIVA,
-Cxc.FacDesgloseIVA,=Cxc.NoCtaPago
-Cxc.NoCtaPago=Mon.TipoCambio,
+Cxc.FacDesgloseIVA,=Cxc.NoCtaPago,
+Cxc.NoCtaPago,=Mon.TipoCambio,
 
 [Cxc.vis/Cxc.NoCtaPago]
 Clave=Cxc.NoCtaPago

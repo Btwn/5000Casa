@@ -1,0 +1,38 @@
+[Sucursal.tbl/Tabla.ListaCampos]
+ParamAccDirIntelisisMES=PropreEstatus
+PropreEstatus=ProprePorcentajeNormal
+ProprePorcentajeNormal=PropreMarca
+PropreMarca=CFDFlex
+CFDFlex=noCertificado
+noCertificado=Llave
+Llave=ContrasenaSello
+ContrasenaSello=CertificadoBase64
+CertificadoBase64=RutaCertificado
+RutaCertificado=LiberaAut
+LiberaAut=(Fin)
+
+[Sucursal.tbl/Tabla.SQL]
+POSLimiteCaja,=ParamAccDirIntelisisMES,
+ParamAccDirIntelisisMES,=PropreEstatus,
+PropreEstatus,=ProprePorcentajeNormal,
+ProprePorcentajeNormal,=PropreMarca,
+PropreMarca,=CFDFlex,
+CFDFlex,=noCertificado,
+noCertificado,=Llave,
+Llave,=ContrasenaSello,
+ContrasenaSello,=CertificadoBase64,
+CertificadoBase64,=RutaCertificado,
+RutaCertificado,=LiberaAut
+LiberaAut=FROM Sucursal
+
+[Sucursal.tbl/LiberaAut]
+Clave=LiberaAut
+Nombre=LiberaAut
+Visible=S
+TamanoValidacion=10
+TipoDatos=Lógico
+AyudaEnCaptura=Lista de Opciones
+OpcionesUnicamente=S
+OpcionesColumnas=1
+OpcionesPredefinidas=Si - No
+OpcionesRenglones=8
