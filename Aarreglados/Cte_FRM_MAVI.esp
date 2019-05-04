@@ -226,9 +226,15 @@ Activo=N
 ;**** Se modifico la lista en captura se quito el campo: Cte.DefMoneda (Arly Rubio Camacho 05-Sep-08)****
 ; ***** Integracion de campos nuevos en pestaña Venta: ParentescoRecomiendaMavi, DireccionRecomiendaMavi, 
 ; 		para Cte Express por Arturo Guizer.  JR 03-Dic-09. *****
-[Cte.frm/Venta]
-ListaEnCaptura=Cte.Cliente<BR>Cte.Nombre<BR>Cte.MaviRecomendadoPor<BR>MaviRecomendadoPorNombre<BR>Cte.ParentescoRecomiendaMavi<BR>Cte.DireccionRecomiendaMavi<BR>Cte.EnviarA<BR>CteEnviarA.Nombre<BR>Cte.TipoCredito<BR>TipoCreditoNombre<BR>Cte.Licencias<BR>Cte.LicenciasTipo<BR>Cte.Agente<BR>Agente.Nombre<BR>Cte.AgenteServicio<BR>AgenteServicio.Nombre<BR>Cte.Agente3<BR>Agente3.Nombre<BR>Cte.Agente4<BR>Agente4.Nombre<BR>Cte.PersonalCobrador<BR>PersonalNombre<BR>Cte.SucursalEmpresa<BR>Sucursal.Nombre<BR>Cte.Publico<BR>Cte.DiaRevision1<BR>Cte.DiaRevision2<BR>Cte.HorarioRevision<BR>Cte.DiaPago1<BR>Cte.DiaPago2<BR>Cte.HorarioPago
-
+[Cte.frm/Venta.ListaEnCaptura]
+Cte.Nombre=Cte.MaviRecomendadoPor
+Cte.MaviRecomendadoPor=MaviRecomendadoPorNombre
+MaviRecomendadoPorNombre=Cte.ParentescoRecomiendaMavi
+Cte.ParentescoRecomiendaMavi=Cte.DireccionRecomiendaMavi
+Cte.DireccionRecomiendaMavi=Cte.EnviarA
+CteEnviarA.Nombre=Cte.TipoCredito
+Cte.TipoCredito=TipoCreditoNombre
+TipoCreditoNombre=Cte.Licencias
 
 ;*** Se modifico como linea nueva Arly Rubio (05-Sep-08)****
 [Cte.frm/Venta.Cte.Licencias]
@@ -289,8 +295,25 @@ ColorFuente=Negro
 
 ;****Modificacion 22-Oct-08 por Leticia Quezada
 ;**** Se modifico:Incluyo desarrollo de Buro de Credito
-[Cte.frm/ReglaNegocio]
-ListaEnCaptura=Cte.Cliente<BR>Cte.Nombre<BR>Cte.BonificacionTipo<BR>Cte.ZonaImpuesto<BR>Cte.BloquearMorosos<BR>Cte.ChecarCredito<BR>Cte.RecorrerVencimiento<BR>Cte.ModificarVencimiento<BR>Cte.CreditoEspecial<BR>Cte.Credito<BR>Cte.OtrosCargos<BR>Cte.CRMovVenta<BR>Cte.CreditoConLimite<BR>Cte.CreditoConLimitePedidos<BR>Cte.CreditoConDias<BR>Cte.CreditoConCondiciones<BR>Cte.CreditoLimite<BR>Cte.CreditoMoneda<BR>Cte.CreditoLimitePedidos<BR>Cte.CreditoDias<BR>Cte.CreditoCondiciones<BR>Cte.esAutCredEspecial<BR>Cte.esDimaElite<BR>Cte.TipoDIMA<BR>Cte.LimiteCredDimaElite<BR>Cte.siPorcFactDima<BR>Cte.PedidosParciales<BR>Cte.Conciliar<BR>Cte.DocumentacionCompleta<BR>Cte.SeEnviaBuroCreditoMAVI<BR>Cte.NivelCobranzaEspecialMAVI<BR>Cte.NivelespecialContacto<BR>Cte.EnviarCobTelMavi<BR>Cte.MotivoMavi<BR>Cte.PublicidadMAVI<BR>Cte.MotivoMAVIPublicidad
+[Cte.frm/ReglaNegocio.ListaEnCaptura]
+Cte.Nombre=Cte.BonificacionTipo
+Cte.BonificacionTipo=Cte.ZonaImpuesto
+Cte.ZonaImpuesto=Cte.BloquearMorosos
+Cte.CreditoCondiciones=Cte.esAutCredEspecial
+Cte.esAutCredEspecial=Cte.esDimaElite
+Cte.esDimaElite=Cte.TipoDIMA
+Cte.TipoDIMA=Cte.LimiteCredDimaElite
+Cte.LimiteCredDimaElite=Cte.siPorcFactDima
+Cte.siPorcFactDima=Cte.PedidosParciales
+Cte.PedidosParciales=Cte.DocumentacionCompleta
+Cte.DocumentacionCompleta=Cte.SeEnviaBuroCreditoMAVI
+Cte.SeEnviaBuroCreditoMAVI=Cte.NivelCobranzaEspecialMAVI
+Cte.NivelCobranzaEspecialMAVI=Cte.NivelespecialContacto
+Cte.NivelespecialContacto=Cte.EnviarCobTelMavi
+Cte.EnviarCobTelMavi=Cte.MotivoMavi
+Cte.MotivoMavi=Cte.PublicidadMAVI
+Cte.PublicidadMAVI=Cte.MotivoMAVIPublicidad
+Cte.MotivoMAVIPublicidad=(Fin)
 
 
 [Cte.frm/ReglaNegocio.Cte.BonificacionTipo]
@@ -442,7 +465,6 @@ Cte.TieneMovimientos=Cte.MovimientoUltimoCobro
 Cte.MovimientoUltimoCobro=Cte.FechaUltimoCobro
 Cte.FechaUltimoCobro=(Fin)
 
-
 [Cte.frm/Otros.Cte.FechaUltimoCobro]
 Carpeta=Otros
 Clave=Cte.FechaUltimoCobro
@@ -470,8 +492,6 @@ ColorFuente=Negro
 
 ;************************************************************************* ACCIONES **********************************************************
 ;*********************************************************************************************************************************************
-
-
 [Cte.frm/Forma.ListaAcciones]
 ActividadesCRM=Motivos
 Motivos=(Fin)
