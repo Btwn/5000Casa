@@ -2,7 +2,7 @@
 Unidad.INFORDescripcion=Unidad.UnidadSatMavi
 Unidad.UnidadSatMavi=(Fin)
 
-[Vista.SQL]
+[Unidad.vis/Vista.SQL]
 Unidad.Orden,=Unidad.Clave,
 Unidad.ReferenciaIntelisisService,=Unidad.INFORDescripcion,
 Unidad.INFORDescripcion,=Unidad.UnidadSatMavi

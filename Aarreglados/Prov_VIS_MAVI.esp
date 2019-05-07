@@ -20,16 +20,13 @@ LocalidadCNBV.LocalidadCNBV=(Fin)
 [Prov.vis/Vista.SQL]
 Prov.CentroCostos,=Prov.TipoTercero,
 Prov.TipoTercero,=Prov.TipoOperacion,
-Prov.TipoOperacion,=Prov.TipoTercero,
-Prov.TipoTercero,=Prov.TipoOperacion,
 Prov.TipoOperacion,=Prov.LocalidadCNBV,
 Prov.LocalidadCNBV,=Prov.NotasPlaneador,
 Prov.NotasPlaneador,=CtaDinero.CtaDinero,
 CentroCostos.CentroCostos,=CentroCostos.Descripcion,
-CentroCostos.Descripcion,=LocalidadCNBV.LocalidadCNBV
+CentroCostos.Descripcion,=LocalidadCNBV.LocalidadCNBVMAVI00
 LocalidadCNBV.LocalidadCNBV=FROM Prov
-LEFT OUTER JOIN CentroCostos ON Prov.CentroCostos<IGUAL>CentroCostos.CentroCostos=LEFT OUTER JOIN Cta CtaRetencion ON Prov.CuentaRetencion<IGUAL>CtaRetencion.Cuenta
-LEFT OUTER JOIN Cta CtaRetencion ON Prov.CuentaRetencion<IGUAL>CtaRetencion.Cuenta=LEFT OUTER JOIN LocalidadCNBV ON Prov.LocalidadCNBV<IGUAL>LocalidadCNBV.LocalidadCNBV
+LEFT OUTER JOIN CentroCostos ON Prov.CentroCostos<IGUAL>CentroCostos.CentroCostos=LEFT OUTER JOIN LocalidadCNBV ON Prov.LocalidadCNBV<IGUAL>LocalidadCNBV.LocalidadCNBV
 LEFT OUTER JOIN LocalidadCNBV ON Prov.LocalidadCNBV<IGUAL>LocalidadCNBV.LocalidadCNBV=(Fin)
 
 [Prov.vis/Vista.ListaTablas]

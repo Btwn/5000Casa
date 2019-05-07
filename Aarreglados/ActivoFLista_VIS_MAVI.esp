@@ -20,7 +20,7 @@ Vehiculo.Descripcion5=(Fin)
 Personal=Vehiculo
 Vehiculo=(Fin)
 
-[Vista.ListaRelaciones]
+[ActivoFLista.vis/Vista.ListaRelaciones]
 ActivoF.Personal=ActivoF.Vehiculo
 ActivoF.Vehiculo=Personal.Vehiculo
 Personal.Vehiculo=Vehiculo.Art

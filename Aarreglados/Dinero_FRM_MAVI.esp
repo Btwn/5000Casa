@@ -12,7 +12,7 @@ FiltroAutoValidar=Dinero.Moneda
 
 FiltroGeneral={Si(ConDatos(Filtro.Usuario), <T>  Dinero.Usuario=Case When Dinero.Mov in(<T>+Comillas(<T>Apertura Caja<T>) + <T>, <T>+Comillas(<T>Corte Caja<T>) +<T>) Then <T>+ Comillas(Filtro.Usuario)+<T> Else Dinero.Usuario End<T>, <T> 1=1 <T>)}
 
-[(Carpeta Abrir).ListaEnCaptura]
+[Dinero.frm/(Carpeta Abrir).ListaEnCaptura]
 (Inicio)=CtaAnterior
 CtaAnterior=Dinero.CtaDinero
 

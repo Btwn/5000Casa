@@ -12,7 +12,7 @@ FiltroAutoCampo=Compra.Moneda
 FiltroAutoValidar=Compra.Moneda
 
 
-[Detalle.ListaEnCaptura]
+[Compra.frm/Detalle.ListaEnCaptura]
 CompraD.EmidaProveedorCelular=CompraD.ClavePresupuestal
 CompraD.ClavePresupuestal=CompraD.FechaRequerida
 CompraD.ArticuloMaquila=MovDevMAVI

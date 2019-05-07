@@ -7,7 +7,7 @@ PosicionInicialArriba=148
 PosicionInicialAltura=569
 PosicionInicialAncho=793
 
-[Forma.ListaAcciones]
+[Cta.frm/Forma.ListaAcciones]
 Historico=GenCatalogo
 GenCatalogo=Balanza
 Balanza=(Fin)

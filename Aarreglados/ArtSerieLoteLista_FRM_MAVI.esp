@@ -11,7 +11,7 @@
 [ArtSerieLoteLista.frm/Lista]
 FiltroGeneral=SerieLote.Empresa=<T>{Empresa}<T> AND<BR>SerieLote.Articulo=<T>{Info.Articulo}<T> AND <BR>SerieLote.SubCuenta=<T>{Vacio(Info.SubCuenta,<T><T>)}<T> AND<BR>SerieLote.Existencia{Si(Info.AlmTipo=<T>Activos Fijos<T>,<T>ActivoFijo<T>,<T><T>)}>0 AND<BR>SerieLote.Almacen=<T>{Info.Almacen}<T><BR>{Si(General.Autotransportes y ConDatos(Filtro.Espacio), <T> AND SerieLote.SerieLote LIKE <T>+Comillas(Filtro.Espacio+<T>%<T>), <T><T>)}
 
-[Lista.ListaEnCaptura]
+[ArtSerieLoteLista.frm/Lista.ListaEnCaptura]
 SerieLote.Tarima=Modelo2
 Modelo2=(Fin)
 

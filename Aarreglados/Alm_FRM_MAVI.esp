@@ -4,7 +4,7 @@ PosicionInicialArriba=100
 PosicionInicialAlturaCliente=529
 VentanaEstadoInicial=Normal
 
-[Detalle.ListaEnCaptura]
+[Alm.frm/Detalle.ListaEnCaptura]
 Alm.Rama=Alm.Sucursal
 Sucursal.Nombre=Alm.SucursalAsignada
 Alm.SucursalAsignad=Alm.SucursalRef

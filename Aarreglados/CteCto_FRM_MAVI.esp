@@ -63,7 +63,7 @@ FiltroRespetar=S
 FiltroTipo=General
 FiltroGeneral=(CteCto:CteCto.Cliente=<T>{Info.Cliente}<T>) y (CteCto:CteCto.Tipo=<T>AVAL<T>)
 
-[Ficha.ListaEnCaptura]
+[CteCto.frm/Ficha.ListaEnCaptura]
 CteCto.ApellidoMaterno=CteCto.BeneF
 CteCto.BeneF=CteCto.eMail
 CteCto.eMail=CteCto.OPORTEnviar

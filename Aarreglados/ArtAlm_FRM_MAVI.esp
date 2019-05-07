@@ -9,7 +9,7 @@ VentanaTipoMarco=Sencillo
 PosicionInicialAlturaCliente=465
 VentanaEstadoInicial=Normal
 
-[Forma.ListaAcciones]
+[ArtAlm.frm/Forma.ListaAcciones]
 Plan=Refrescar
 Refrescar=(Fin)
 

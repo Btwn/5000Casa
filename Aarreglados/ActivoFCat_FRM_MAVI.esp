@@ -78,7 +78,7 @@ ColorFondo=Blanco
 ColorFuente=Negro
 
 
-[Acciones.Cerrar]
+[ActivoFCat.Frm/Acciones.Cerrar]
 Nombre=Cerrar
 Boton=3
 NombreEnBoton=S
