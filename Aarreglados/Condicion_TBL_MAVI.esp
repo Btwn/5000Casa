@@ -23,8 +23,7 @@ DIMA=(Fin)
 
 [Condicion.tbl/Tabla.SQL]
 CFD_metodoDePago,=DiferirFechaAcumulacion,
-DiferirFechaAcumulacion,=CFD_metodoDePago,
-CFD_metodoDePago,=PROPREGrupo,
+DiferirFechaAcumulacion,=PROPREGrupo,
 PROPREGrupo,=PROPRECanal,
 PROPRECanal,=LeasingMAVI,
 LeasingMAVI,=ListTemp,
