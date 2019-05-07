@@ -1,12 +1,51 @@
-[ActivoFLista.vis/SELECT]
-'ActivoF.Observaciones'=ActivoF.Observaciones
-
 [ActivoFLista.vis/Vista]
-SQL=SELECT<BR>  ActivoF.ID,<BR>  ActivoF.Empresa,<BR>  ActivoF.Articulo,<BR>  ActivoF.Serie,<BR>  ActivoF.Moneda,<BR>  ActivoF.Almacen,<BR>  ActivoF.Categoria,<BR>  ActivoF.AdquisicionFecha,<BR>  ActivoF.VidaUtil,<BR>  ActivoF.DepreciacionInicio,<BR>  ActivoF.DepreciacionMeses,<BR>  ActivoF.Estatus,<BR>  ActivoF.Sucursal,<BR>  ActivoF.TieneMovimientos,<BR>  ActivoF.Responsable,<BR>  ActivoFCat.Propietario,<BR>  Art.Articulo,<BR>  Art.Descripcion1,<BR>  Personal.ApellidoPaterno,<BR>  Personal.ApellidoMaterno,<BR>  Personal.Nombre,  ActivoF.Observaciones,<BR>  Vehiculo.Vehiculo,<BR>  Vehiculo.Descripcion,<BR>  Vehiculo.Placas,<BR>  Vehiculo.Descripcion1,<BR>  Vehiculo.Descripcion2,<BR>  Vehiculo.Descripcion3,<BR>  Vehiculo.Descripcion4,<BR>  Vehiculo.Descripcion5<BR><BR>FROM<BR>  ActivoF<BR>  JOIN Art ON ActivoF.Articulo=Art.Articulo<BR>  LEFT OUTER JOIN ActivoFCat ON ActivoF.Categoria=ActivoFCat.Categoria<BR>  LEFT OUTER JOIN Personal ON ActivoF.Responsable=Personal.Personal
+SQL=(Lista)
+
+[ActivoFLista.vis/Vista.SQL]
+(Inicio)=SELECT
+SELECT=ActivoF.ID,
+ActivoF.ID,=ActivoF.Empresa,
+ActivoF.Empresa,=ActivoF.Articulo,
+ActivoF.Articulo,=ActivoF.Serie,
+ActivoF.Serie,=ActivoF.Moneda,
+ActivoF.Moneda,=ActivoF.Almacen,
+ActivoF.Almacen,=ActivoF.Categoria,
+ActivoF.Categoria,=ActivoF.AdquisicionFecha,
+ActivoF.AdquisicionFecha,=ActivoF.VidaUtil,
+ActivoF.VidaUtil,=ActivoF.DepreciacionInicio,
+ActivoF.DepreciacionInicio,=ActivoF.DepreciacionMeses,
+ActivoF.DepreciacionMeses,=ActivoF.Observaciones,
+ActivoF.Observaciones,=ActivoF.Estatus,
+ActivoF.Estatus,=ActivoF.Sucursal,
+ActivoF.Sucursal,=ActivoF.TieneMovimientos,
+ActivoF.TieneMovimientos,=ActivoF.Responsable,
+ActivoF.Responsable,=ActivoFCat.Propietario,
+ActivoFCat.Propietario,=Art.Articulo,
+Art.Articulo,=Art.Descripcion1,
+Art.Descripcion1,=Personal.ApellidoPaterno,
+Personal.ApellidoPaterno,=Personal.ApellidoMaterno,
+Personal.ApellidoMaterno,=Personal.Nombre,
+Personal.Nombre,=Vehiculo.Vehiculo,
+Vehiculo.Vehiculo,=Vehiculo.Descripcion,
+Vehiculo.Descripcion,=Vehiculo.Placas,
+Vehiculo.Placas,=Vehiculo.Descripcion1,
+Vehiculo.Descripcion1,=Vehiculo.Descripcion2,
+Vehiculo.Descripcion2,=Vehiculo.Descripcion3,
+Vehiculo.Descripcion3,=Vehiculo.Descripcion4,
+Vehiculo.Descripcion4,=Vehiculo.Descripcion5
+Vehiculo.Descripcion5=FROM ActivoF
+FROM ActivoF=JOIN Art ON ActivoF.Articulo<IGUAL>Art.Articulo
+JOIN Art ON ActivoF.Articulo<IGUAL>Art.Articulo=LEFT OUTER JOIN ActivoFCat ON ActivoF.Categoria<IGUAL>ActivoFCat.Categoria
+LEFT OUTER JOIN ActivoFCat ON ActivoF.Categoria<IGUAL>ActivoFCat.Categoria=LEFT OUTER JOIN Personal ON ActivoF.Responsable<IGUAL>Personal.Personal
+LEFT OUTER JOIN Personal ON ActivoF.Responsable<IGUAL>Personal.Personal=LEFT OUTER JOIN Vehiculo ON ActivoF.Articulo<IGUAL>Vehiculo.Articulo AND ActivoF.Serie<IGUAL>Vehiculo.Serie
+LEFT OUTER JOIN Vehiculo ON ActivoF.Articulo<IGUAL>Vehiculo.Articulo AND ActivoF.Serie<IGUAL>Vehiculo.Serie=(Fin)
+
+
 
 [ActivoFLista.vis/Vista.ListaCampos]
-Personal.Nombre=ActivoF.Observaciones
-ActivoF.Observaciones=Vehiculo.Vehiculo
+ActivoF.DepreciacionMeses=ActivoF.Observaciones
+ActivoF.Observaciones=ActivoF.Estatus
+Personal.Nombre=Vehiculo.Vehiculo
 Vehiculo.Vehiculo=Vehiculo.Descripcion
 Vehiculo.Descripcion=Vehiculo.Placas
 Vehiculo.Placas=Vehiculo.Descripcion1

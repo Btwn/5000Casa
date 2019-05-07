@@ -22,7 +22,6 @@ PosicionSec1=245
 PosicionSec2=429
 ExpresionesAlMostrar=Asigna(Info.Copiar, Falso)<BR>Asigna(Mavi.DM0125BanderaEmb,<T>VERDADERO<T>)
 
-
 [Embarque.frm/Forma.ListaAcciones]
 DetalleConcentrado=GeneraTran
 GeneraTran=(Fin)
@@ -39,7 +38,7 @@ Embarque.ProgramadoPara=Embarque.PersonalCobrador
 Embarque.FechaEmision=Embarque.CtaDinero
 Embarque.CtaDinero=Embarque.Vehiculo
 Vehiculo.Volumen=Vehiculo.TipoUnidadVehicular
-Vehiculo.TipoUnidadVehicular=Embarque.Agente
+Vehiculo.TipoUnidadVehicular=Embarque.Proveedor
 Agente.Nombre=Embarque.LicenciaAgente
 Embarque.LicenciaAgente=Embarque.Agente2
 Embarque.Agente2=AgenteAux.Nombre
@@ -47,7 +46,6 @@ AgenteAux.Nombre=Embarque.LicenciaAgente2
 Embarque.LicenciaAgente2=Embarque.Ruta
 Embarque.Ruta=Ruta.Kms
 Ruta.Kms=Embarque.Referencia
-
 
 ;**** Nuevo campo agregado ****
 [Embarque.frm/Ficha.Vehiculo.TipoUnidadVehicular]
@@ -136,9 +134,9 @@ Tamano=25
 
 
 ;**** Nuevo campos agregado: ParaComisionChoferMAVI ****
-[Embarque.frm/Detalle.ListaEnCaptura]
-EmbarqueD.Causa=EmbarqueD.ParaComisionChoferMAVI
-EmbarqueD.ParaComisionChoferMAVI=(Fin)
+[Embarque.frm/Detalle]
+ListaEnCaptura=EmbarqueD.Orden<BR>EmbarqueMov.Accion<BR>Movimiento<BR>EmbarqueD.MovPorcentaje<BR>EmbarqueMov.Zona<BR>EmbarqueMov.Ruta<BR>EmbarqueMov.UEN<BR>ImporteTotal<BR>CxcSaldo<BR>ImporteEmbarque<BR>EmbarqueD.Paquetes<BR>EmbarqueD.Observaciones<BR>EmbarqueD.Estado<BR>EmbarqueD.ParaComisionChoferMAVI<BR>EmbarqueD.FechaHora<BR>EmbarqueD.Persona<BR>EmbarqueD.PersonaID<BR>EmbarqueD.Forma<BR>EmbarqueD.Importe<BR>EmbarqueD.Referencia<BR>EmbarqueD.Causa
+
 
 ;**** Nuevo campo agregado ARC 28-Feb-09 ****
 [Embarque.frm/Detalle.EmbarqueD.ParaComisionChoferMAVI]
@@ -167,13 +165,10 @@ Totalizadores=S
 ;Totalizadores2=Embarque:Vehiculo.Peso-Suma;(EmbarqueD:EmbarqueMov.Peso)<BR>Embarque:Vehiculo.Volumen-Suma;(EmbarqueD:EmbarqueMov.Volumen)<BR>Suma;(EmbarqueD:ImporteTotal*EmbarqueD:EmbarqueMov.TipoCambio)<BR>Suma;(EmbarqueD:EmbarqueD.Paquetes)<BR>Suma(EmbarqueD:EmbarqueD.Importe)<BR>Suma;(EmbarqueD:ImporteEmbarque*EmbarqueD:EmbarqueMov.TipoCambio)<BR>Si;(Embarque:Embarque.Mov = <T>Embarque Magisterio<T>,(SQL('SELECT ;dbo.FnCostoFleteMag (:nid)', Embarque:Embarque.ID)*;(Embarque:Embarque.FleteMagisterio/100.0)),0)
 ;Totalizadores3=#,.##<BR>#,.##<BR>(Monetario)<BR>#,<BR>(Monetario)<BR>;(Monetario)<BR>(Monetario)
 
+ListaEnCaptura=Peso Disp<BR>Volumen Disp<BR>Paquetes<BR>Total Embarque<BR>Total Cobrado<BR>Magisterio
 Totalizadores1=Peso Disp<BR>Volumen Disp<BR>Importe Total<BR>Paquetes<BR>Total Cobrado<BR>Total Embarque<BR>Magisterio
 Totalizadores2=SQL(<T>SELECT DBO.FN_EmbarquesPesoVolumenTotal(:n,2)<T>,Embarque:Embarque.ID)<BR>SQL(<T>SELECT DBO.FN_EmbarquesPesoVolumenTotal(:n,1)<T>,Embarque:Embarque.ID)<BR>Suma(EmbarqueD:ImporteTotal*EmbarqueD:EmbarqueMov.TipoCambio)<BR>Suma(EmbarqueD:EmbarqueD.Paquetes)<BR>Suma(EmbarqueD:EmbarqueD.Importe)<BR>Suma(EmbarqueD:ImporteEmbarque*EmbarqueD:EmbarqueMov.TipoCambio)<BR>Si(Embarque:Embarque.Mov = <T>Embarque Magisterio<T>,(SQL('SELECT dbo.FnCostoFleteMag (:nid)', Embarque:Embarque.ID)*(Embarque:Embarque.FleteMagisterio/100.0)),0)
 Totalizadores3=#,.##<BR>#,.##<BR>(Monetario)<BR>#,<BR>(Monetario)<BR>(Monetario)<BR>(Monetario)
-
-[Embarque.frm/(Carpeta Totalizadores).ListaEnCaptura]
-Total Cobrado=Magisterio
-Magisterio=(Fin)
 
 
 ;*****Nuevo totalizador ****
