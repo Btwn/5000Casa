@@ -56,7 +56,7 @@ Art.CentroCostos3=VentaD.Lista
 VentaD.Lista=(Fin)
 
 [VentaD.vis/Vista.ListaCalculados]
-Art.CentroCostos3=MovDevMAVI
+VolumenTotal=MovDevMAVI
 MovDevMAVI=(Fin)
 
 ;****Nuevo campo agregado*****
