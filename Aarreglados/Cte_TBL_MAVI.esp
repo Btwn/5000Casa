@@ -285,21 +285,30 @@ Formula=SQLEnLista( <T>SELECT Motivo FROM MotivoMAVIPublicidad ORDER BY 1<T> )
 ;Se modifica la lista de refresco para el campo de Delegacion para tambien considere la poblacion Moises Mavi 13/11/2009 
 [Cte.tbl/Delegacion]
 ListaRefrescar=Colonia<BR>CodigoPostal<BR>Estado<BR>Pais<BR>Poblacion<BR>LocalidadCNBV<BR>Ruta
+ValidacionCondicion=Verdadero
 
 ;Se modifica la lista de refresco para el campo de Codigo Postal para tambien considere la poblacion Moises Mavi 13/11/2009 
 [Cte.tbl/CodigoPostal]
 ListaRefrescar=Colonia<BR>Delegacion<BR>Estado<BR>Pais<BR>Poblacion<BR>LocalidadCNBV<BR>Ruta
+ValidacionCondicion=Verdadero
 
 ;Se modifica la lista de refresco para el campo de Colonia para tambien considere la poblacion Moises Mavi 13/11/2009 
 [Cte.tbl/Colonia]
 ListaRefrescar=Delegacion<BR>CodigoPostal<BR>Estado<BR>Pais<BR>Poblacion<BR>LocalidadCNBV<BR>Ruta<BR>
+ValidacionCondicion=Verdadero
 
 ;Se el valor por omision del campo poblacionn para que sea igual que el de Delegacion Moises Mavi 13/11/2009 
 [Cte.tbl/Poblacion]
 ValorPorOmision=Delegacion
 CondicionEdicion=1=2
 ValorRefrescar=Delegacion
+ValidacionCondicion=Verdadero
 
+[Cte.tbl/TipoRegistro]
+ValidacionCondicion=Verdadero
+
+[Cte.tbl/Estado]
+ValidacionCondicion=Verdadero
 
 ; ***** Integracion de campos nuevo: ParentescoRecomiendaMavi, DireccionRecomiendaMavi 
 ; 		para Cte Express por Arturo Guizer. JR 03-Dic-09 *****

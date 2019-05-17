@@ -12,8 +12,8 @@ LocalidadCNBV.LocalidadCNBV=(Fin)
 
 [Personal.vis/Vista.SQL]
 Personal.MES,=Personal.LocalidadCNBV,
-Personal.LocalidadCNBV,=Personal.Sembrado
-Personal.Sembrado=Plaza.Descripcion,
+Personal.LocalidadCNBV,=Personal.Sembrado,
+Personal.Sembrado,=Plaza.Descripcion,
 CtaSituacion.Situacion,=CtaSituacion.Icono,
 CtaSituacion.Icono,=LocalidadCNBV.LocalidadCNBV
 LocalidadCNBV.LocalidadCNBV=FROM Personal
