@@ -1,0 +1,14 @@
+;Se Agrega Campo NoMotor      odcampos    01-Junio-2012
+; **** Eliminacion de campo NoMotor dentro del paquete DM0185_14062012. JR 16-Jun-2012. ****
+
+
+
+; **** Eliminacion de campo NoMotor dentro del paquete DM0185_14062012. JR 16-Jun-2012. ****
+;[SerieLoteProp.vis/SerieLoteProp.Nomotor]
+;Clave=SerieLoteProp.Nomotor
+;Visible=S
+;LigaTabla=SerieLoteProp
+;LigaCampo=Nomotor
+;Ligado=S
+;ClaveBDE=Nomotor
+
