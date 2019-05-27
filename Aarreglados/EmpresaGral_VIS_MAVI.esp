@@ -4,8 +4,8 @@ EmpresaGral.NominaG4=EmpresaGral.BasePersonalMAVI
 EmpresaGral.BasePersonalMAVI=Cte.Nombre
 
 [EmpresaGral.vis/Vista.SQL]
-EmpresaGral.NominaG4,=EmpresaGral.BasePersonalMAVI
-EmpresaGral.BasePersonalMAVI=Cte.Nombre,
+EmpresaGral.NominaG4,=EmpresaGral.BasePersonalMAVI,
+EmpresaGral.BasePersonalMAVI,=Cte.Nombre,
 
 
 [EmpresaGral.vis/EmpresaGral.BasePersonalMAVI]
