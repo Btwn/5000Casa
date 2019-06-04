@@ -39,7 +39,8 @@ Cte.DireccionRecomiendaMavi=Cte.CFD_Enviar
 Cte.CFD_Enviar=Cte.NivelespecialContacto
 Cte.NivelespecialContacto=Cte.LCAXSI
 Cte.LCAXSI=Cte.Irregularidad
-Cte.Irregularidad=Cte.TipoCredito
+Cte.Irregularidad=Cte.NegativaBC
+Cte.NegativaBC=Cte.TipoCredito
 Cte.TipoCredito=Cte.esAutCredEspecial
 Cte.esAutCredEspecial=Cte.esDimaElite
 Cte.esDimaElite=Cte.LimiteCredDimaElite
@@ -59,7 +60,8 @@ Cte.TipoCalle,=Cte.MaviEstatus,
 Cte.MaviEstatus,=Cte.NivelCobranzaEspecialMAVI,
 Cte.NivelCobranzaEspecialMAVI,=Cte.LCAXSI,
 Cte.LCAXSI,=Cte.Irregularidad,
-Cte.Irregularidad,=Cte.esAutCredEspecial,
+Cte.Irregularidad,=Cte.NegativaBC,
+Cte.NegativaBC,=Cte.esAutCredEspecial,
 Cte.esAutCredEspecial,=Cte.esDimaElite,
 Cte.esDimaElite,=Cte.LimiteCredDimaElite,
 Cte.LimiteCredDimaElite,=Cte.siPorcFactDima,
@@ -81,7 +83,8 @@ Cte.TipoDIMA,=Agente.Agente,
 [Cte.vis/Vista.ListaCalculados]
 PersonalNombre=MaviRecomendadoPorNombre
 MaviRecomendadoPorNombre=TipoCreditoNombre
-TipoCreditoNombre=(Fin)
+TipoCreditoNombre=UltimoCambioEstatus
+UltimoCambioEstatus=(Fin)
 
 ;***** Integracion cfdfLEX *****
 [Cte.vis/Cte.CFD_Enviar]
@@ -439,3 +442,24 @@ LigaCampo=Irregularidad
 Ligado=S
 TipoCampo=Tabla
 ClaveBDE=Irregularidad
+
+[Cte.vis/Cte.NegativaBC]
+Clave=Cte.NegativaBC
+LigaTabla=Cte
+LigaCampo=NegativaBC
+TipoDatos=Lógico
+ClaveBDE=NegativaBC
+TamanoValidacion=30
+ValorPorOmision=falso
+AyudaMemRenglones=8
+AyudaMemOpc=Unicamente opciones listadas
+Nombre=Comportamiento en BC Negativo
+
+[Cte.vis/UltimoCambioEstatus]
+Clave=UltimoCambioEstatus
+TipoDatos=FechaHora
+TipoCampo=Calculado
+TamanoValidacion=20
+Alineacion=por Omisión
+Nombre=Cambio de Estatus
+Formula=SQL( <T>SELECT MAX(FechaActualizacion) FROM DM0195CREDITabla_ModfHistCte WHERE CAMPO=:tcampo and CUENTA=:tcliente<T> ,<T>NegativaBC<T>,Cte.Cliente)
